@@ -34,15 +34,15 @@
 </head>
 
 <body class="font-lato">
-    <header>
+    <header class="max-w-screen-xl mx-auto p-5 md:p-8 lg:p-12">
         <!-- navbar-section -->
-        <nav class="container mx-auto">
-            <div class="navbar  bg-base-100">
-                <div class="navbar-start list-none space-x-2">
-                  <li><a href="">Home</a></li>
-                  <li><a href="">About Us </a></li>
-                  <li><a href="">Shop</a></li>
-                  <li><a href="">All Fruits</a></li>
+        <nav class="container mx auto text-color-white   ">
+            <div class="mx-auto mt-6  navbar bg-base-100 rounded-full bg-common-color p-10 max-w-screen-lg">
+                <div class=" navbar-start list-none space-x-2">
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About Us </a></li>
+                    <li><a href="">Shop</a></li>
+                    <li><a href="">All Fruits</a></li>
                 </div>
                 <div class="navbar-center">
                     <div class="flex justify-center  space-x-2">
@@ -50,16 +50,19 @@
                         <h3 class="text-4xl font-bold text-color-white">Fruit Burst</h3>
                     </div>
                 </div>
-                <div class="navbar-end">
-                  <button class="btn btn-ghost btn-circle">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                  </button>
+                <div class="navbar-end ">
+                    <div class="flex">
+                        <input class="w-40 bg-color-white rounded-full px-5" type="text" placeholder="Search here"> 
+                        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-5.197-5.197m0 0A7.5 7.5 0 105.196 5.196a7.5 7.5 0 0010.607 10.607z" />
+                          </svg>
+                    </div>     
                 </div>
-              </div>
+            </div>
         </nav>
 
         <!-- banner section -->
-        <section class="container mx-auto mt-20 relative">
+        <section class="container mx-auto mt-20">
             <div class="carousel w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
@@ -83,7 +86,7 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide1" class="btn btn-circle">❮</a>
                         <div class=" text-center font-extrabold mt-2 text-color-white">
-                            <h2 class="text-7xl mb-2">Exotic tastes at your
+                            <h2 class="lg:text-7xl mb-2">Exotic tastes at your
                                 <br>
                                 doorstep</h2>
                             <p class="mb-2">We supply highly quality organic products</p>
@@ -98,7 +101,7 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide2" class="btn btn-circle">❮</a>
                         <div class="text-center font-extrabold mt-2 text-color-white">
-                            <h2 class="text-7xl mb-2">Exotic tastes at your
+                            <h2 class="lg:text-7xl mb-2">Exotic tastes at your
                                 <br>
                                 doorstep</h2>
                             <p class="mb-2">We supply highly quality organic products</p>
@@ -113,7 +116,7 @@
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide3" class="btn btn-circle">❮</a>
                         <div class=" text-center font-extrabold mt-2 text-color-white">
-                            <h2 class="text-7xl mb-2">Exotic tastes at your
+                            <h2 class="lg:text-7xl mb-2">Exotic tastes at your
                                 <br>
                                 doorstep</h2>
                             <p class="mb-2">We supply highly quality organic products</p>
@@ -125,7 +128,8 @@
             </div>
         </section>
         <!-- fruits section -->
-        <section class="grid grid-cols-5 gap-16 text-center pt-7 py-4 bg-color-white text-color-black mx-24 rounded-lg absolute left-[70px] top-[500px]">
+        <section
+            class="grid grid-cols-5 gap-16 text-center pt-7 py-4 bg-color-white text-color-black mx-24 rounded-lg relative -top-24 invisible md:visible lg:visible">
             <div>
                 <img class="m-auto" src="images/fruit1.png" alt="">
                 <p>Strawberry</p>
@@ -143,14 +147,14 @@
                 <p>Strawberry</p>
             </div>
             <div>
-                <img class="m-auto"  src="images/fruit4.png" alt="">
+                <img class="m-auto" src="images/fruit4.png" alt="">
                 <p>Mango</p>
             </div>
         </section>
     </header>
-    <main>
+    <main class="max-w-screen-xl mx-auto p-5 md:p-8 lg:p-12">
         <!-- deal of the day section -->
-        <section class=" mt-36 bg-color-white pb-32">
+        <section class=" bg-color-white pb-32">
             <div class="flex justify-between py-9">
                 <div class="mx-14 pt-10">
                     <h2 class="text-5xl font-extrabold text-color-black mb-2">Deal of the day</h2>
@@ -366,7 +370,8 @@
             </div>
         </section>
         <!-- team section -->
-        <section class="container  mx-auto justify-center  pt-24 text-color-white">
+        <section  class="bg-opacity-70  mx-auto justify-center  pt-24 text-color-white" style="background-image: url('./images/team.png'); 
+        ">
             <h2 class="text-5xl text-center mb-2">Meet the team section</h2>
             <p class="text-center">Contrary to popular belief, is not simply random text. It has roots in a piece of
                 classical
@@ -633,7 +638,8 @@
                         <div>
                             <h4 class="text-2xl text-color-black font-extrabold mb-2">Dedicated Team</h4>
                             <hr class="mb-2">
-                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh fruits.
+                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.
                             </p>
                         </div>
                     </div>
@@ -646,7 +652,8 @@
                         <div>
                             <h4 class="text-2xl text-color-black font-extrabold mb-2">Fresh is Best</h4>
                             <hr class="mb-2">
-                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh fruits.
+                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.
                             </p>
                         </div>
                     </div>
@@ -699,7 +706,8 @@
                         <div>
                             <h4 class="text-2xl text-color-black font-extrabold mb-2">Gift Certificates</h4>
                             <hr class="mb-2">
-                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh fruits.
+                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.
                             </p>
                         </div>
                     </div>
@@ -712,7 +720,8 @@
                         <div>
                             <h2 class="text-2xl text-color-black font-extrabold mb-2">Integrated Supplier</h2>
                             <hr class="mb-2">
-                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh fruits.
+                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
@@ -759,7 +768,8 @@
                         <div>
                             <h2 class="text-2xl text-color-black font-extrabold mb-2">Sustainable Practice</h2>
                             <hr class="mb-2">
-                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh fruits.
+                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
@@ -771,12 +781,13 @@
                                 fill="black" />
                         </svg>
                     </div>
-        
+
                     <div class="flex  gap-2">
                         <div>
                             <h2 class="text-2xl text-color-black font-extrabold mb-2">The Benefits Only</h2>
                             <hr class="mb-2">
-                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh fruits.
+                            <p class="mb-2">Professional employees are there for you to pick the most amazing and fresh
+                                fruits.
                             </p>
                         </div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 24 24" fill="none">
@@ -802,8 +813,8 @@
                     </div>
                 </div>
             </div>
-            
-            
+
+
         </section>
     </main>
     <footer class="pt-32 pb-3 text-center  w-auto text-color-white bg-[#121212]">
