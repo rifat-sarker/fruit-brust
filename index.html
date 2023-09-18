@@ -36,13 +36,34 @@
 <body class="font-lato">
     <header>
         <!-- navbar-section -->
+        <nav class="container mx-auto">
+            <div class="navbar  bg-base-100">
+                <div class="navbar-start list-none space-x-2">
+                  <li><a href="">Home</a></li>
+                  <li><a href="">About Us </a></li>
+                  <li><a href="">Shop</a></li>
+                  <li><a href="">All Fruits</a></li>
+                </div>
+                <div class="navbar-center">
+                    <div class="flex justify-center  space-x-2">
+                        <img class="w-[50px]  h-[50px]" src="images/logo.png" alt="">
+                        <h3 class="text-4xl font-bold text-color-white">Fruit Burst</h3>
+                    </div>
+                </div>
+                <div class="navbar-end">
+                  <button class="btn btn-ghost btn-circle">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                  </button>
+                </div>
+              </div>
+        </nav>
 
         <!-- banner section -->
-        <section class="container mx-auto mt-20">
+        <section class="container mx-auto mt-20 relative">
             <div class="carousel w-full">
                 <!-- slide 1 -->
                 <div id="slide1" class="carousel-item relative w-full">
-                    <img src="/images/banner1.png" class="w-full" />
+                    <img class="" src="images/banner1.png" alt="">
                     <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
                         <a href="#slide4" class="btn btn-circle">❮</a>
                         <div class=" text-center font-extrabold mt-2 text-color-white">
@@ -103,9 +124,32 @@
                 </div>
             </div>
         </section>
+        <!-- fruits section -->
+        <section class="grid grid-cols-5 gap-16 text-center pt-7 py-4 bg-color-white text-color-black mx-24 rounded-lg absolute left-[70px] top-[500px]">
+            <div>
+                <img class="m-auto" src="images/fruit1.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div>
+                <img class="m-auto" src="images/fruit2.png" alt="">
+                <p>Orange</p>
+            </div>
+            <div>
+                <img class="m-auto" src="images/fruit3.png" alt="">
+                <p>Mango</p>
+            </div>
+            <div>
+                <img src="images/fruit4.png" alt="">
+                <p>Strawberry</p>
+            </div>
+            <div>
+                <img class="m-auto"  src="images/fruit4.png" alt="">
+                <p>Mango</p>
+            </div>
+        </section>
     </header>
     <main>
-        <!-- day of the day section -->
+        <!-- deal of the day section -->
         <section class=" mt-36 bg-color-white pb-32">
             <div class="flex justify-between py-9">
                 <div class="mx-14 pt-10">
@@ -115,8 +159,7 @@
                         Latin literature from 45 BC, making it over 2000 years old.</p>
                 </div>
                 <!-- countdown -->
-                <div
-                    class="grid grid-flow-col gap-5 text-center auto-cols-max pr-9 text-color-black font-extrabold pt-10">
+                <div class="grid lg:grid-flow-col gap-5 text-center auto-cols-max pr-9 text-color-black font-extrabold pt-10">
                     <div class="flex flex-col">
                         <span class="countdown font-mono text-5xl">
                             <span style="--value:29;"></span>
@@ -319,7 +362,7 @@
                 </div>
             </div>
             <div class="text-center">
-                <button class="btn bg-common-color border-none text-color-white mt-7">Shop Now</button>
+                <button class="btn bg-common-color border-none text-color-white mt-7">Shop All</button>
             </div>
         </section>
         <!-- team section -->
